@@ -10,13 +10,11 @@ A faithful recreation of the classic **Space Invaders** arcade game built entire
 - **3 alien types** — Squid (30pts), Crab (20pts), Octopus (10pts) — each with pixel-art sprites and 2-frame animation
 - **Mystery UFO** — appears periodically for 50–200 bonus points
 - **4 destructible shields** — pixel-accurate damage, eroded by both player and alien bullets
-- **Top-10 high score table** — persisted to `highscores.dat` with 3-letter name entry
 - **Particle explosion effects** — colour-coded per alien type
 - **Animated star field** — multi-layer parallax background
 - **Screen flash feedback** — hit confirmation and damage indicators
 - **Lives system** — 3 lives, 2-second invincibility after being hit
 - **Pause screen** — [P] to pause/resume
-- **Single source file** — entire game in `space_invaders.cpp`
 
 ---
 
@@ -71,20 +69,6 @@ g++ space_invaders.cpp -o space_invaders \
 
 ```bash
 ./space_invaders
-```
-
-High scores are saved to `highscores.dat` in the same directory as the executable.
-
----
-
-## 📁 File Structure
-
-```
-space_invaders/
-├── space_invaders.cpp   ← Entire game (single file)
-├── highscores.dat       ← Auto-created on first run
-└── README.md            ← This file
-```
 
 ---
 
@@ -118,8 +102,6 @@ Each level increases difficulty:
 
 - **Language:** C++17
 - **Renderer:** SDL2 hardware-accelerated 2D
-- **Text:** SDL2_ttf (falls back through DejaVu → Liberation → FreeSans → Arial)
-- **No external assets** — all sprites drawn with SDL2 rectangle primitives using pixel-art char arrays
 
 ---
 
