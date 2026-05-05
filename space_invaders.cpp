@@ -1,10 +1,10 @@
 /*
  * ═══════════════════════════════════════════════════════════════
- *  SPACE INVADERS — C++17 / SDL2
+ *  SPACE INVADERS — C++ / SDL2
  *  Author  : veqzii
  *  Build   : g++ space_invaders.cpp -o space_invaders \
  *              $(sdl2-config --cflags --libs) -lSDL2_ttf \
- *              -lSDL2_mixer -std=c++17
+ *              -lSDL2_mixer -std=c++
  * ═══════════════════════════════════════════════════════════════
  */
 
