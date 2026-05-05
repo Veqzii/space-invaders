@@ -1,4 +1,4 @@
-# 👾 Space Invaders — C++17 / SDL2
+# 👾 Space Invaders — C++/ SDL2
 
 A faithful recreation of the classic **Space Invaders** arcade game built entirely in C++ using SDL2, with modern additions including levels, high scores, particle effects and a pixel-art star field.
 
@@ -61,7 +61,7 @@ vcpkg install sdl2 sdl2-ttf
 g++ space_invaders.cpp -o space_invaders \
     $(sdl2-config --cflags --libs) \
     -lSDL2_ttf \
-    -std=c++17 \
+    -std=c++ \
     -O2
 ```
 
@@ -100,7 +100,7 @@ Each level increases difficulty:
 
 ## 🎨 Tech
 
-- **Language:** C++17
+- **Language:** C++
 - **Renderer:** SDL2 hardware-accelerated 2D
 
 ---
